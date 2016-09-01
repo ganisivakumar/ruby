@@ -1,10 +1,10 @@
 class String
   def to_s
-    self.each_byte.each_with_index do |c, index|
-      if(c >= 65 && c <= 90)
-        self[index] = (c + 32).chr
-      elsif(c >= 97 && c <= 122)
-        self[index] = (c - 32).chr
+    self.each_byte.each_with_index do |ascii_value_of_char, index|
+      if(ascii_value_of_char >= 65 && ascii_value_of_char <= 90)
+        self[index] = (ascii_value_of_char + 32).chr
+      elsif(ascii_value_of_char >= 97 && ascii_value_of_char <= 122)
+        self[index] = (ascii_value_of_char - 32).chr
       end
     end
   end
