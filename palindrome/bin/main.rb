@@ -8,7 +8,6 @@ Benchmark.bm do|bm|
         #puts 'Enter the string to check palindrome or enter q/Q to quit'
         #input = gets.chomp
         input = 'Q'
-
         if input == 'q' or input == 'Q'
           break
         end
@@ -22,7 +21,6 @@ Benchmark.bm do|bm|
         #puts 'Enter the string to check palindrome or enter q/Q to quit'
         #input = gets.chomp
         input = 'Q'
-
         if input =~ /^q$/i 
           break
         end
