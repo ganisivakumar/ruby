@@ -23,3 +23,4 @@ loop do
     puts "Balance : #{ customer1.balance }"
   end
 end
+
