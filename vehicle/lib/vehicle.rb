@@ -1,10 +1,9 @@
 class Vehicle
-  attr_reader :name
   attr_accessor :price
   
-  def initialize(parameters = {})
-    @name = parameters[:name]
-    @price = parameters[:price]
+  def initialize(vehicle_specs = {})
+    @name = vehicle_specs[:name]
+    @price = vehicle_specs[:price]
   end
   
   def to_s

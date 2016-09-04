@@ -1,14 +1,13 @@
 require_relative 'vehicle'
 class Bike < Vehicle
-  attr_reader :dealer
   
-  def initialize(parameters = {})
-    super({name: parameters[:name], price: parameters[:price]})
-    @dealer = parameters[:dealer]
+  def initialize(vehicle_specs = {})
+    super({ name: vehicle_specs[:name], price: vehicle_specs[:price] })
+    @dealer = vehicle_specs[:dealer]
   end
   
   def to_s
-    super + ',' + " Dealer_name: #{@dealer}"
+    super + ',' + "Dealer_name: #{@dealer}"
   end
 
 end
