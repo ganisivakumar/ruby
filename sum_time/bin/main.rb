@@ -1,5 +1,5 @@
 require_relative "../lib/sumtime"
 
 time = SumTime.new
-p time.sum("11:41:13", "1:13:14")
+p time.display_time("22:41:13", "11:13:14")
 
